@@ -13,4 +13,4 @@ def getWebData():
         print(data.decode(),end='')
 
     mysock.close()
-
+##getWebData()
