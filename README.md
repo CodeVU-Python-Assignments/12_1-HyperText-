@@ -7,7 +7,7 @@ You are to retrieve the following document using the HTTP protocol in a way that
 http://data.pr4e.org/intro-short.txt (Links to an external site.)
 For the purposes of this assignment
 
-Modify the socket1.py  Download socket1.py program to retrieve the above URL and print out the headers and data.  Regarding the displaying of the headers information, most popular packages for HTTP requests will return the headers as a dictionary (key-value format), however, the socket package does not. For the purposes of this assignment, you will also need to leverage your understanding of Python dictionaries in order to create a new dictionary with the correct header key-value pairs you get from the HTTP response and then display those values. This will allow you to become familiar with the typical data format when parsing header information.
+Modify the socket1.py program to retrieve the above URL and print out the headers and data.  Regarding the displaying of the headers information, most popular packages for HTTP requests will return the headers as a dictionary (key-value format), however, the socket package does not. For the purposes of this assignment, you will also need to leverage your understanding of Python dictionaries in order to create a new dictionary with the correct header key-value pairs you get from the HTTP response and then display those values. This will allow you to become familiar with the typical data format when parsing header information.
 
 Make sure to change the code to retrieve the above URL - the values are different for each URL.
 
