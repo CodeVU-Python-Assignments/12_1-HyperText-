@@ -1,16 +1,21 @@
 
 from random import randint
-from unittest.mock import Mock
 import socket1
 
 def test_calculateAbsolute_printsABS_lessThan21(capfd, monkeypatch):
     in_num = randint(-100, 21)
     input = [in_num]
     monkeypatch.setattr('builtins.input', lambda _:input.pop())
-    socket1.getWebData()
+    socket1.assignment_12_1()
 
     out, err = capfd.readouterr()
        
+    assert "Status:" in out
+    assert "HTTP/1.1 200 OK" in out
+    assert "Headers:" in out
+    assert "Content-Length: 467" in out
+    assert "Content-Type: text/plain" in out
+    assert "Data:" in out
     assert "Why should you learn to write programs?" in out
     assert "Writing programs (or programming) is a very creative " in out
     assert "and rewarding activity.  You can write programs for" in out
